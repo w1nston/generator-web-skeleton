@@ -1,0 +1,15 @@
+{
+  "name": "<%= projectName %>",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./index.js ./webpack.config.js ./app/**/*.js",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./utils/spec-setup.js",
+    "test:watch": "npm test -- --watch"
+  },
+  "author": "",
+  "license": "MIT"
+}
