@@ -40,11 +40,11 @@ module.exports = generators.Base.extend({
     this.copyTemplateFile('index.js');
   },
 
-  installDependencies: function() {
+  installNpmDependencies: function() {
     this.npmInstall(dependencies, { save: true });
   },
 
-  installDevDependencies: function() {
+  installNpmDevDependencies: function() {
     this.npmInstall(devDependencies, { saveDev: true });
   }
 });

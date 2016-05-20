@@ -108,13 +108,13 @@ describe('generator', function() {
     });
   });
 
-  describe('installNpmDependencies', function() {
+  xdescribe('installNpmDependencies', function() {
     it('calls npmInstall with flag save set to true', function() {
       // TODO Use spy to see that this.npmInstall is called with correct dependencies
     });
   });
 
-  describe('installNpmDevDependencies', function() {
+  xdescribe('installNpmDevDependencies', function() {
     it('calls npmInstall with flag saveDev set to true', function() {
       // TODO Use spy to see that this.npmInstall is called with correct dependencies
     });
