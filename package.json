@@ -1,0 +1,37 @@
+{
+  "name": "generator-web-skeleton",
+  "version": "1.0.0",
+  "description": "Yeoman generator to setup a very basic project structure.",
+  "files": [
+    "generators/app"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w1nston/generator-web-skeleton.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "react",
+    "redux",
+    "enzyme",
+    "mocha",
+    "babel",
+    "eslint"
+  ],
+  "author": {
+    "name": "Jonas Wallander",
+    "email": "wallander.jonas@gmail.com",
+    "url": "https://github.com/w1nston"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w1nston/generator-web-skeleton/issues"
+  },
+  "homepage": "https://github.com/w1nston/generator-web-skeleton#readme",
+  "dependencies": {
+    "yeoman-generator": "^0.23.3"
+  }
+}
