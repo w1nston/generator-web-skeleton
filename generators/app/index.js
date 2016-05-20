@@ -1,8 +1,11 @@
+'use strict';
+
 var generators = require('yeoman-generator');
+var mkdirp = require('mkdirp');
 
 module.exports = generators.Base.extend({
 
-  todo: function() {
-    console.log('TODO: Implement this generator.');
+  createFileStructure: function() {
+    mkdirp('app');
   }
 });
