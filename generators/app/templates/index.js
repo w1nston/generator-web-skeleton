@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-const store = createStore((state, action) => ({ message: 'I need a reducer!'}));
+const store = createStore((state, action) => ({ message: 'I need a reducer!' }));
 
 ReactDOM.render(
   <Provider store={store}>
