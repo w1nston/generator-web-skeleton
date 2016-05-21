@@ -35,7 +35,7 @@ module.exports = generators.Base.extend({
     this.copyTemplateFile('package.json', { projectName: this.appname });
     this.copyTemplateFile('utils/spec-setup.js');
     this.copyTemplateFile('webpack.config.js');
-    this.copyTemplateFile('README.md', { title: this.appname });
+    this.copyTemplateFile('README.md');
     this.copyTemplateFile('index.html', { projectName: this.appname });
     this.copyTemplateFile('index.js');
   },
