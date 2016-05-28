@@ -4,6 +4,7 @@ var generators = require('yeoman-generator');
 var mkdirp = require('mkdirp');
 var dependencies = require('./npmDependencies');
 var devDependencies = require('./npmDevDependencies');
+var stringUtils = require('../../utils/stringUtils');
 
 module.exports = generators.Base.extend({
 
@@ -32,11 +33,11 @@ module.exports = generators.Base.extend({
   generateFiles: function() {
     this.copyTemplateFile('.babelrc');
     this.copyTemplateFile('.eslintrc.js');
-    this.copyTemplateFile('package.json', { projectName: this.appname });
+    this.copyTemplateFile('package.json', { projectName: stringUtils.camelCase(this.appname) });
     this.copyTemplateFile('utils/spec-setup.js');
     this.copyTemplateFile('webpack.config.js');
     this.copyTemplateFile('README.md');
-    this.copyTemplateFile('index.html', { projectName: this.appname });
+    this.copyTemplateFile('index.html', { projectName: stringUtils.camelCase(this.appname) });
     this.copyTemplateFile('index.js');
   },
 
