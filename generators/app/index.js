@@ -4,7 +4,7 @@ var generators = require('yeoman-generator');
 var mkdirp = require('mkdirp');
 var dependencies = require('./npmDependencies');
 var devDependencies = require('./npmDevDependencies');
-var stringUtils = require('../../utils/stringUtils');
+var stringUtils = require('./utils/stringUtils');
 
 module.exports = generators.Base.extend({
 
