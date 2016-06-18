@@ -31,7 +31,7 @@ $ npm i -g generator-web-skeleton
 Create a directory for your project and move into it.
 
 ```bash
-$ mkdir cheesy-project-name && cd $_
+$ mkdir your-project-name && cd $_
 ```
 
 Then run the generator in one of two ways.
