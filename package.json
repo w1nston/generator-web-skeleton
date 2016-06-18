@@ -1,6 +1,6 @@
 {
   "name": "generator-web-skeleton",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Yeoman generator to setup a very basic project structure.",
   "files": [
     "generators/app"
