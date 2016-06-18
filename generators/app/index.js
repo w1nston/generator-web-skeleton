@@ -8,7 +8,7 @@ var stringUtils = require('./utils/stringUtils');
 
 module.exports = generators.Base.extend({
 
-  constructor: function() {
+  constructor: function () {
     generators.Base.apply(this, arguments);
 
     var that = this; // eslint-disable-line vars-on-top
@@ -26,10 +26,10 @@ module.exports = generators.Base.extend({
         that.destinationPath(to),
         variables
       );
-    }
+    };
   },
 
-  createFileStructure: function() {
+  createFileStructure: function () {
     mkdirp('app/actions/__tests__');
     mkdirp('app/constants');
     mkdirp('app/containers/__tests__');
@@ -38,7 +38,7 @@ module.exports = generators.Base.extend({
     mkdirp('utils');
   },
 
-  generateFiles: function() {
+  generateFiles: function () {
     this.copyTemplateFile('.babelrc');
     this.copyTemplateFile('.eslintrc.js');
     this.copyTemplateFile('package.json', { projectName: stringUtils.camelCase(this.appname) });
@@ -49,18 +49,18 @@ module.exports = generators.Base.extend({
     this.copyTemplateFile('index.js');
   },
 
-  generateLintFilesForTests: function() {
+  generateLintFilesForTests: function () {
     this.copyFileFromTemplatesTo('.eslintrc.mocha.js', 'app/actions/__tests__/.eslintrc.js');
     this.copyFileFromTemplatesTo('.eslintrc.mocha.js', 'app/containers/__tests__/.eslintrc.js');
     this.copyFileFromTemplatesTo('.eslintrc.mocha.js', 'app/components/__tests__/.eslintrc.js');
     this.copyFileFromTemplatesTo('.eslintrc.mocha.js', 'app/reducers/__tests__/.eslintrc.js');
   },
 
-  installNpmDependencies: function() {
+  installNpmDependencies: function () {
     this.npmInstall(dependencies, { save: true });
   },
 
-  installNpmDevDependencies: function() {
+  installNpmDevDependencies: function () {
     this.npmInstall(devDependencies, { saveDev: true });
   }
 });
