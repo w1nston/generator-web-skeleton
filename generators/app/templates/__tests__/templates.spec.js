@@ -11,6 +11,10 @@ describe('the templates directory', function() {
     assert.file(getFile('.eslintrc.js'));
   });
 
+  it('contains an .eslintrc.mocha.js file', function() {
+    assert.file(getFile('.eslintrc.mocha.js'))
+  });
+
   it('contains a package.json file', function() {
     assert.file(getFile('package.json'));
   });

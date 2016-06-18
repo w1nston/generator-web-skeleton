@@ -27,6 +27,10 @@ describe('generator', function() {
       it('generates a test directory', function() {
         assert.file('app/actions/__tests__');
       });
+
+      it('copies .eslintrc.js for mocha from templates to the test directory', function() {
+        assert.file('app/actions/__tests__/.eslintrc.js');
+      });
     });
 
     describe('for constants', function() {
@@ -43,6 +47,10 @@ describe('generator', function() {
       it('generates a test directory', function() {
         assert.file('app/containers/__tests__');
       });
+
+      it('copies .eslintrc.js for mocha from templates to the test directory', function() {
+        assert.file('app/containers/__tests__/.eslintrc.js');
+      });
     });
 
     describe('for components', function() {
@@ -53,6 +61,10 @@ describe('generator', function() {
       it('generates a test directory', function() {
         assert.file('app/components/__tests__');
       });
+
+      it('copies .eslintrc.js for mocha from templates to the test directory', function() {
+        assert.file('app/components/__tests__/.eslintrc.js');
+      });
     });
 
     describe('for reducers', function() {
@@ -62,6 +74,10 @@ describe('generator', function() {
 
       it('generates a test directory', function() {
         assert.file('app/reducers/__tests__');
+      });
+
+      it('copies .eslintrc.js for mocha from templates to the test directory', function() {
+        assert.file('app/reducers/__tests__/.eslintrc.js');
       });
     });
   });
