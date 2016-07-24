@@ -4,7 +4,34 @@
 
 ## Technologies
 
-The generator will setup a client focused web project, using [React](http://facebook.github.io/react/) and [Redux](http://redux.js.org/). There is also a focus on testing the project, and in order to do that the test framework [Mocha](https://mochajs.org/) is used, along with Airbnb's testing utility for React, [Enzyme](http://airbnb.io/enzyme/).
+The generator will setup a client focused web project, using [React](http://facebook.github.io/react/) and [Redux](http://redux.js.org/), with an emphasis on testing.
+
+Testing technologies used are [Mocha](https://mochajs.org/), [WallabyJS](https://wallabyjs.com/), and [Enzyme](http://airbnb.io/enzyme/). 
+
+### Mocha
+
+Is used as a regular test runner, to run all tests in the project using the command:
+
+```bash
+$ npm test
+```
+
+### WallabyJS
+
+Is used as a continuous test runner for all tests.
+
+### Enzyme
+
+Is used to test React components. E.g.
+
+```js
+import { shallow } from 'enzyme';
+
+it('renders an ExampleComponent', () => {
+  const component = shallow(<ExampleComponent />);
+  expect(component.type()).toBe('div');
+});
+```
 
 ## Structure
 
@@ -45,3 +72,11 @@ $ yo web-skeleton
 ```bash
 $ yo
 ```
+
+## Configure WallabyJS
+
+Depending on what IDE you are using a plugin for that IDE needs to be downloaded and installed. After it is installed the configuration file ```wallaby.config.js``` is the configuration needed to test the files in the generated directory structure of this generator.
+
+Once the plugin is at place and the configuration is loaded, it should only be to start WallabyJS to be able to reap the benefits of having your tests running as you type them.
+ 
+If you are not sure how to configure the plugin for your IDE of choice, go to the [documentation](https://wallabyjs.com/docs/intro/install.html).
