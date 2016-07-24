@@ -22,7 +22,8 @@
     "enzyme",
     "mocha",
     "babel",
-    "eslint"
+    "eslint",
+    "wallabyjs"
   ],
   "author": {
     "name": "Jonas Wallander",
