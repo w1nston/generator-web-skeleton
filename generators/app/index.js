@@ -44,6 +44,7 @@ module.exports = generators.Base.extend({
     this.copyTemplateFile('package.json', { projectName: stringUtils.camelCase(this.appname) });
     this.copyTemplateFile('utils/spec-setup.js');
     this.copyTemplateFile('webpack.config.js');
+    this.copyTemplateFile('wallaby.config.js');
     this.copyTemplateFile('README.md');
     this.copyTemplateFile('index.html', { projectName: stringUtils.camelCase(this.appname) });
     this.copyTemplateFile('index.js');

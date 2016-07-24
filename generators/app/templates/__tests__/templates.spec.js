@@ -7,6 +7,10 @@ describe('the templates directory', function() {
     assert.file(getFile('webpack.config.js'));
   });
 
+  it('contains a wallaby.config.js file', function() {
+    assert.file(getFile('wallaby.config.js'));
+  });
+
   it('contains an .eslintrc.js file', function() {
     assert.file(getFile('.eslintrc.js'));
   });

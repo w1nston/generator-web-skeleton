@@ -108,6 +108,11 @@ describe('generator', function() {
       // TODO assert files are the same...
     });
 
+    it('copies wallaby.config.js from templates', function() {
+      assert.file('wallaby.config.js');
+      // TODO assert files are the same...
+    });
+
     it('copies README.md from templates', function() {
       assert.file('README.md');
       // TODO assert files are the same...
