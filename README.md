@@ -2,6 +2,14 @@
 
 [Yeoman](http://yeoman.io/) generator to setup a very basic project structure.
 
+### (DEPRECATED)
+
+Rather use [create-react-app](https://github.com/facebookincubator/create-react-app). 
+
+[Use what now?](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html)
+
+With [yarn](https://yarnpkg.com/en/) installed it could also be used like [this](https://yarnpkg.com/blog/2017/05/12/introducing-yarn/).
+
 ## Technologies
 
 The generator will setup a client focused web project, using [React](http://facebook.github.io/react/) and [Redux](http://redux.js.org/), with an emphasis on testing.
